@@ -9,6 +9,7 @@ package database;
  * @author juanc
  */
 
+//A
 import model.Usuario;
 import java.sql.*;
 
