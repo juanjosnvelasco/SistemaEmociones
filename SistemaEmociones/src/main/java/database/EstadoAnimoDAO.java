@@ -16,7 +16,7 @@ import java.util.List;
 
 public class EstadoAnimoDAO {
 
-    // Guardar un registro emocional
+    
     public boolean guardar(EstadoAnimo e) {
         String sql = "INSERT INTO estados_animo (usuario_id, emocion, intensidad, nota, fecha) VALUES (?, ?, ?, ?, ?)";
         try (Connection con = ConexionDB.getConexion();
@@ -26,7 +26,7 @@ public class EstadoAnimoDAO {
             ps.setString(2, e.getEmocion());
             ps.setInt(3, e.getIntensidad());
             ps.setString(4, e.getNota());
-            ps.setDate(5, Date.valueOf(e.getFecha())); // LocalDate → SQL Date
+            ps.setDate(5, Date.valueOf(e.getFecha())); 
 
             ps.executeUpdate();
             return true;
@@ -37,7 +37,7 @@ public class EstadoAnimoDAO {
         }
     }
 
-    // Obtener historial de un usuario
+    
     public List<EstadoAnimo> obtenerHistorial(int usuarioId) {
         List<EstadoAnimo> lista = new ArrayList<>();
         String sql = "SELECT * FROM estados_animo WHERE usuario_id = ? ORDER BY fecha DESC";
