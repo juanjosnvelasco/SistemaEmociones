@@ -32,4 +32,4 @@ public class Frase {
         return "\"" + texto + "\"\n- " + (autor != null ? autor : "Anónimo");
     }
 }
-//fin clase 
+//f
