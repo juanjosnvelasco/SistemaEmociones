@@ -10,17 +10,25 @@ package model;
  */
 
 public class Frase {
-    
+
     private String texto;
     private String autor;
-    
+
+   
     public Frase() {}
+
+    
+    public Frase(String texto) {
+        this.texto = texto;
+    }
+
     
     public Frase(String texto, String autor) {
         this.texto = texto;
         this.autor = autor;
     }
 
+    
     public String getTexto() { return texto; }
     public void setTexto(String texto) { this.texto = texto; }
 
@@ -29,7 +37,6 @@ public class Frase {
 
     @Override
     public String toString() {
-        return "\"" + texto + "\"\n- " + (autor != null ? autor : "Anónimo");
+        return "\"" + texto + "\" - " + autor;
     }
 }
-//f
