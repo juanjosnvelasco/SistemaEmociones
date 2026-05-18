@@ -9,6 +9,8 @@ package model;
  * @author juanc
  */
 
+//jotav
+
 import java.time.LocalDate;
 
 public class EstadoAnimo {
