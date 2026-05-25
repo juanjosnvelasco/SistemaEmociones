@@ -71,7 +71,7 @@ public class DashboardView extends JFrame {
         btnCerrarSesion.setForeground(Color.WHITE);
         btnCerrarSesion.setFocusPainted(false);
 
-        // Layout
+        
         GridBagConstraints g = new GridBagConstraints();
         g.insets = new Insets(10, 10, 10, 10);
         g.fill = GridBagConstraints.HORIZONTAL;

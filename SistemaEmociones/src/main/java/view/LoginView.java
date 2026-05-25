@@ -18,7 +18,7 @@ public class LoginView extends JFrame {
 
     private UsuarioController controller = new UsuarioController();
 
-    private JLabel lblTitulo    = new JLabel("💚 InnerMood", SwingConstants.CENTER);
+    private JLabel lblTitulo    = new JLabel(" InnerMood", SwingConstants.CENTER);
     private JLabel lblEmail     = new JLabel("Email:");
     private JLabel lblContrasena= new JLabel("Contraseña:");
     private JTextField txtEmail = new JTextField(20);
@@ -55,7 +55,7 @@ public class LoginView extends JFrame {
         g.gridy = 4;
         add(btnRegistro, g);
 
-        // Acción Login
+        
         btnLogin.addActionListener(e -> {
             String email = txtEmail.getText();
             String pass  = new String(txtContrasena.getPassword());
@@ -69,7 +69,7 @@ public class LoginView extends JFrame {
             }
         });
 
-        // Acción Registro
+        
         btnRegistro.addActionListener(e -> {
             new RegistroView().setVisible(true);
             dispose();

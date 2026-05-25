@@ -79,7 +79,7 @@ public class FraseController {
         }
     }
 
-    // Convierte \u00e9 → é, \u00a1 → ¡, etc.
+    
     private String decodificarUnicode(String texto) {
         StringBuilder sb = new StringBuilder();
         int i = 0;

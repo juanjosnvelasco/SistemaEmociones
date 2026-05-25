@@ -8,33 +8,45 @@ package model;
  *
  * @author juanc
  */
-
-//jotav
-
 import java.time.LocalDate;
 
 public class EstadoAnimo {
 
-    private int id;           
-    private int usuarioId;    
+    private int id;
+    private int usuarioId;
     private LocalDate fecha;
     private String emocion;
     private int intensidad;
     private String nota;
 
+    
     public EstadoAnimo() {
         this.fecha = LocalDate.now();
     }
 
-    public EstadoAnimo(int usuarioId, String emocion, int intensidad, String nota) {
-        this.usuarioId = usuarioId;
+    
+    public EstadoAnimo(String emocion) {
         this.fecha = LocalDate.now();
+        this.emocion = emocion;
+    }
+
+    
+    public EstadoAnimo(String emocion, int intensidad) {
+        this.fecha = LocalDate.now();
+        this.emocion = emocion;
+        this.intensidad = intensidad;
+    }
+
+    
+    public EstadoAnimo(int usuarioId, String emocion, int intensidad, String nota) {
+        this.fecha = LocalDate.now();
+        this.usuarioId = usuarioId;
         this.emocion = emocion;
         this.intensidad = intensidad;
         this.nota = nota;
     }
 
-    // Getters y Setters
+    
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 

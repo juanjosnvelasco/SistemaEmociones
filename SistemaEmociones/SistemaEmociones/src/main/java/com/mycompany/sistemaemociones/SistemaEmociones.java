@@ -8,14 +8,9 @@ package com.mycompany.sistemaemociones;
  *
  * @author juanc
  */
-import view.LoginView;
-import javax.swing.SwingUtilities;
-
 public class SistemaEmociones {
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            new LoginView().setVisible(true);
-        });
+        System.out.println("Hello World!");
     }
 }

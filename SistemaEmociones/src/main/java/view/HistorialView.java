@@ -34,7 +34,7 @@ public class HistorialView extends JFrame {
     public HistorialView(Usuario u) {
         this.usuarioActual = u;
 
-        setTitle("EmoAdapt - Mi Historial");
+        setTitle("Innermod - Mi Historial");
         setSize(650, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -83,7 +83,7 @@ public class HistorialView extends JFrame {
         add(scroll, BorderLayout.CENTER);
         add(panelBoton, BorderLayout.SOUTH);
 
-        // Cargar datos
+        
         cargarHistorial(lblTotal);
 
         btnVolver.addActionListener(e -> {

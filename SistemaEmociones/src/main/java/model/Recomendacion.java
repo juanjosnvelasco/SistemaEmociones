@@ -19,6 +19,17 @@ public class Recomendacion {
     public Recomendacion() {}
 
     
+    public Recomendacion(String actividad) {
+        this.actividad = actividad;
+    }
+
+    
+    public Recomendacion(String emocionRelacionada, String actividad) {
+        this.emocionRelacionada = emocionRelacionada;
+        this.actividad = actividad;
+    }
+
+    
     public Recomendacion(String emocionRelacionada, String actividad, String explicacionPsicologica) {
         this.emocionRelacionada = emocionRelacionada;
         this.actividad = actividad;
